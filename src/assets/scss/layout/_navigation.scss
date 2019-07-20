@@ -1,0 +1,23 @@
+.navigation {
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-self: center;
+  }
+
+  &__item {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+
+    &:not(:last-child) {
+      padding-right: 32px;
+    }
+  }
+
+  &__link {
+    color: $white;
+  }
+}

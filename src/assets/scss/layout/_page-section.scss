@@ -1,0 +1,35 @@
+.page-section {
+  &:not(.is-fluid) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  &__wrapper {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+
+  &__heading {
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  &__subheading {
+    font-size: 18px;
+    color: #aaa;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  &__grid {
+    @include make-row();
+  } 
+
+  &__button-wrapper {
+    text-align: center;
+    margin-top: 80px;
+  }
+}

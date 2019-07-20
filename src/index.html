@@ -4,9 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Nava</title>
 </head>
 <body>
+  <header class="header">
+    <div class="header__wrapper">
+      <img class="header__logo" src="./assets/img/logo.png" alt="Nava"/>
+      <div class="header__site-navigation">
+        <nav class="navigation header__navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Top destinations</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Add your boat</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="button button--outline-secondary is-white is-small" href="#">Sing Up</a>
+      </div>
+    </div>
+  </header>
+  <main class="content">
+    <section class="page-section is-fluid hero">
+      <div class="hero__text">
+        <h1 class="hero__heading">Reserve a boat now</h1>
+        <h2 class="hero__subheading">And set your sails into paradise!</h2>
+      </div>
+      <div class="hero__statistics-wrapper">
+        <div class="card statistics">
+          <div class="statistics__item">
+            <div class="statistics__count">2,300</div>
+            <div class="statistics__name">Destinations</div>
+          </div>
+          <div class="statistics__item">
+            <div class="statistics__count">1,000</div>
+            <div class="statistics__name">Cities</div>
+          </div>
+          <div class="statistics__item">
+            <div class="statistics__count">35,000</div>
+            <div class="statistics__name">Boats</div>
+          </div>
+          <div class="statistics__item">
+            <div class="statistics__count">50,000</div>
+            <div class="statistics__name">Sailors</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page-section featured-boats">
+      <div class="page-section__wrapper">
+        <h3 class="page-section__heading">Featured boats</h3>
+        <p class="page-section__subheading">Lorem ipsum dolor sit amet</p>
+        <div class="page-section__grid">
+          <div class="offer is-half">
+            <div class="card"><img src="./assets/img/yacht-1.jpg" alt="Yacht" class="offer__thumbnail"></div>
+          </div>
+          <div class="offer is-half">
+            <div class="card"><img src="./assets/img/yacht-2.jpg" alt="Yacht" class="offer__thumbnail"></div>
+          </div>
+          <div class="offer is-half">
+            <div class="card"><img src="./assets/img/yacht-3.jpg" alt="Yacht" class="offer__thumbnail"></div>
+          </div>
+          <div class="offer is-half">
+            <div class="card"><img src="./assets/img/yacht-1.jpg" alt="Yacht" class="offer__thumbnail"></div>
+          </div>
+        </div>
+        <div class="page-section__button-wrapper">
+          <button class="button button--outline-secondary is-black">Load more boats</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"></footer>
   <script src="./main.js"></script>
 </body>
 </html>

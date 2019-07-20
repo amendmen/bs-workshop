@@ -1,0 +1,41 @@
+.hero {
+  background-image: url("../img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: calc(100vh - 70px);
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  %hero-text {
+    text-align: center;
+    color: $white;
+  }
+
+  &__heading {
+    @extend %hero-text;
+
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+
+  &__subheading {
+    @extend %hero-text;
+
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  &__statistics-wrapper {
+    @include make-container();
+    @include make-container-max-widths();
+    
+    margin-bottom: -70px;
+  }
+}

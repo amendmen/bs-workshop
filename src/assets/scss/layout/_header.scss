@@ -1,0 +1,26 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 24px;
+  z-index: 1;
+  
+  &__wrapper {
+    @include make-container();
+    @include make-container-max-widths();
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__site-navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  &__navigation {
+    margin-right: 32px;
+  }
+}

@@ -1,0 +1,35 @@
+// Colors
+// $primary: 
+
+// Typography
+$font-family-base: "PT Sans", sans-serif;
+// $font-family-secondary: "Raleway", sans-serif;
+
+$default-grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$grid-breakpoints: map-merge(
+  $default-grid-breakpoints,
+  (
+    xxl: 1600px
+  )
+);
+
+$default-container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
+
+$container-max-widths: map-merge(
+  $default-container-max-widths,
+  (
+    xxl: 1440px
+  )
+);
